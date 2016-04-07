@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const electroner = require("electroner");
+
+if (~process.argv.indexOf("--help") || ~process.argv.indexOf("-h")) {
+    return console.log(
+        `Usage: $ photon-browser`
+    );
+}
+electroner(`${__dirname}/../lib/index.js`, {
+    "enable-transparent-visuals": true
+  , "disable-cpu": true
+});

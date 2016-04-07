@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo App</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+        </style>
+    </head>
+    <body>
+        <script>
+            var swal = require("sweetalert");
+            window.prompt = function (title, description, cb) {
+                swal({
+                    title: title
+                  , text: description
+                  , type: "input"
+                  , showCancelButton: true
+                  , animation: "slide-from-top"
+                  , inputPlaceholder: "Url"
+                }, function(inputValue) {
+                     if (inputValue === false) return false;
+                     if (inputValue.trim() === "") {
+                         swal.showInputError("You need to write something!");
+                         return false;
+                     }
+                    cb(inputValue);
+                    return true;
+                });
+            };
+            var remote = require('remote');
+            var _window = remote.getCurrentWindow();
+        </script>
+        <div class="window">
+            <header class="toolbar toolbar-header">
+                <span class="window-buttons">
+                    <span onclick="_window.close()" class="icon icon-record" style="color:#fc605b"></span>
+                    <span onclick="_window.minimize()" class="icon icon-record" style="color:#fdbc40"></span>
+                    <span onclick="_window.maximize()" class="icon icon-record" style="color:#34c84a"></span>
+                </span>
+                <h1 class="title" id="title" style="-webkit-app-region: drag">Loading...</h1>
+            </header>
+
+            <div class="window-content">
+                <webview id="browser" src="http://ionicabizau.net" autosize="on"></webview>
+            </div>
+
+            <script>
+                browser.addEventListener("did-finish-load", function(e) {
+                    title.textContent = browser.getTitle();
+                });
+            </script>
+        </div>
+    </body>
+</html>
+

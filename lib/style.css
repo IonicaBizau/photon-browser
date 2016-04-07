@@ -1,0 +1,33 @@
+@import url(../node_modules/photon/dist/css/photon.css);
+@import url(../node_modules/sweetalert/dist/sweetalert.css);
+
+
+#browser {
+    width: 100%;
+    height: calc(100% - 28px);;
+}
+body, html {
+    background-color: transparent !important;
+}
+.window {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 7px 32px rgba(0, 0, 0, 0.42);
+    margin: 40px;
+}
+.sidebar {
+    background-color: #f5f5f4;
+}
+
+.window-buttons {
+    float: left;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+
+h1.title {
+    font-size: 13px;
+    margin-top: 4px !important;
+    width: calc(100% - 51px);
+}
