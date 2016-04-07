@@ -2,6 +2,8 @@
 
 > A tiny web browser based on Photon and Electron.
 
+[![photon-browser](http://i.imgur.com/JyNmpTi.png)](#)
+
 ## :cloud: Installation
     
 You can install the package globally and use it as command line tool:
