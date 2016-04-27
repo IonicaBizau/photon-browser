@@ -1,6 +1,6 @@
 {
   "name": "photon-browser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny web browser based on Photon and Electron.",
   "main": "lib/index.js",
   "bin": {
