@@ -1,6 +1,6 @@
 {
   "name": "photon-browser",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A tiny web browser based on Photon and Electron.",
   "main": "lib/index.js",
   "bin": {
@@ -18,7 +18,7 @@
     "browser",
     "electron"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/photon-browser/issues"
@@ -38,12 +38,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
