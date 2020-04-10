@@ -1,5 +1,5 @@
 @import url(../node_modules/photon/dist/css/photon.css);
-@import url(../node_modules/sweetalert/dist/sweetalert.css);
+@import url(../node_modules/sweetalert2/dist/sweetalert2.min.css);
 
 
 #browser {

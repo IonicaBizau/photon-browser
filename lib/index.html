@@ -11,27 +11,27 @@
     </head>
     <body>
         <script>
-            var swal = require("sweetalert");
+            var Swal = require("sweetalert2");
             window.prompt = function (title, description, cb) {
-                swal({
+                Swal.fire({
                     title: title
                   , text: description
-                  , type: "input"
+                  , input: "text"
                   , showCancelButton: true
                   , animation: "slide-from-top"
                   , inputPlaceholder: "Url"
-                }, function(inputValue) {
-                     if (inputValue === false) return false;
-                     if (inputValue.trim() === "") {
+                }).then(function({ value }) {
+                     if (!value) return false;
+                     if (value.trim() === "") {
                          swal.showInputError("You need to write something!");
                          return false;
                      }
-                    cb(inputValue);
+                    cb(value);
                     return true;
                 });
             };
-            var remote = require('remote');
-            var _window = remote.getCurrentWindow();
+            //var remote = require('remote');
+            //var _window = remote.getCurrentWindow();
         </script>
         <div class="window">
             <header class="toolbar toolbar-header">
@@ -44,7 +44,7 @@
             </header>
 
             <div class="window-content">
-                <webview id="browser" src="http://ionicabizau.net" autosize="on"></webview>
+                <webview id="browser" src="https://ionicabizau.net/" autosize="on"></webview>
             </div>
 
             <script>
@@ -53,6 +53,9 @@
                 }
                 browser.addEventListener("page-title-updated", updateTitle);
                 browser.addEventListener("did-finish-load", updateTitle);
+                prompt("URL", "Insert the url." , function (src) {
+                    browser.src = src
+                })
             </script>
         </div>
     </body>
