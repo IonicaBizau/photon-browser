@@ -3,13 +3,11 @@
 
 # `$ photon-browser`
 
- [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/photon-browser.svg)](https://www.npmjs.com/package/photon-browser) [![Downloads](https://img.shields.io/npm/dt/photon-browser.svg)](https://www.npmjs.com/package/photon-browser) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
-
-<a href="https://www.buymeacoffee.com/H96WwChMy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/photon-browser.svg)](https://www.npmjs.com/package/photon-browser) [![Downloads](https://img.shields.io/npm/dt/photon-browser.svg)](https://www.npmjs.com/package/photon-browser)
 
 > A tiny web browser based on Photon and Electron.
 
-[![photon-browser](http://i.imgur.com/JyNmpTi.png)](#)
+[![photon-browser](https://i.imgur.com/tJjRpuN.png)](#)
 
 ## :cloud: Installation
 
@@ -32,6 +30,8 @@ Then, run `photon-browser --help` and see what the CLI tool can do.
 $ photon-browser --help
 Usage: $ photon-browser
 ```
+
+
 
 ## :memo: Documentation
 
